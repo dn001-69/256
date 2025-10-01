@@ -1,4 +1,4 @@
-name: Playwright WebMiner 100x
+name: PW 100x
 
 on:
   workflow_dispatch:
@@ -68,7 +68,7 @@ jobs:
           URL="$URL" npx node loop-playwright-${{ matrix.instance }}.js
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots-${{ matrix.instance }}
           path: artifacts/
