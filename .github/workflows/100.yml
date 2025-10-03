@@ -1,7 +1,9 @@
-name: PW 1000x
+name: PW 256x
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main  # atau ganti sesuai branch yang ingin dipantau
 
 jobs:
   playwright-loop:
